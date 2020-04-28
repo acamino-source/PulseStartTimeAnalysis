@@ -17,10 +17,9 @@ rtfileoutputStr = filehead + "_result.root"
 print("Analyzing data from " + filehead + ". Files listed in " + filelistStr)
 
 # some constants
-NSamples = 50000  # number of data points in one waveform
+NSamples = 5000  # number of data points in one waveform **also check**
 tpt = 2.0  # time interval between sample points, in ns.
-NCH = 4  # number of PMTs # check
-QFactor = tpt / 50.0 * 1000.0  # convert V*ns/50Ohm to charge in pC
+NCH = 5  # number of PMTs **check?**
 Nsigma = 10
 
 # divided by 4 because 4 PMTs in group
